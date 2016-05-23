@@ -59,12 +59,11 @@ static char collectionViewActionHandler;
     self.rawIndexPath = selectedIndexPath;
     
     NSUInteger numberOfItems = [self.dataSource collectionView:self numberOfItemsInSection:0];
-    if (self.rawIndexPath.row == numberOfItems - 1)
+    if (self.tempDataSource.count < numberOfItems && self.rawIndexPath.row == numberOfItems - 1)
         return;
     
     UICollectionViewCell *selectedCell = [self cellForItemAtIndexPath:selectedIndexPath];
-    UIView *snap = [self snapshotViewWithInputView:selectedCell];
-    self.tempView = snap;
+    self.tempView = [self snapshotViewWithInputView:selectedCell];
     
 //    NSLog(@"tempDataSource --begain:%@",self.tempDataSource);
     
@@ -93,10 +92,10 @@ static char collectionViewActionHandler;
     
     NSIndexPath *currentIndexPath = [self indexPathForItemAtPoint:point];
 
-    if (self.rawIndexPath.row == numberOfItems - 1)
+    if (self.tempDataSource.count < numberOfItems && self.rawIndexPath.row == numberOfItems - 1)
         return;
     
-    if (currentIndexPath.row == numberOfItems - 1 && ![self.selectedIndexPath isEqual:currentIndexPath]) {
+    if (self.tempDataSource.count < numberOfItems && currentIndexPath.row == numberOfItems - 1 && ![self.selectedIndexPath isEqual:currentIndexPath]) {
         currentIndexPath = [NSIndexPath indexPathForRow:currentIndexPath.row - 1 inSection:0];
     }
     
@@ -116,10 +115,10 @@ static char collectionViewActionHandler;
     
     NSIndexPath *currentIndexPath = [self indexPathForItemAtPoint:point];
 
-    if (self.rawIndexPath.row == numberOfItems - 1)
+    if (self.tempDataSource.count < numberOfItems && self.rawIndexPath.row == numberOfItems - 1)
         return;
     
-    if (currentIndexPath.row == numberOfItems - 1 && ![self.selectedIndexPath isEqual:currentIndexPath]) {
+    if (self.tempDataSource.count < numberOfItems && currentIndexPath.row == numberOfItems - 1 && ![self.selectedIndexPath isEqual:currentIndexPath]) {
         currentIndexPath = [NSIndexPath indexPathForRow:currentIndexPath.row - 1 inSection:0];
     }
     
@@ -192,7 +191,7 @@ static char collectionViewActionHandler;
 - (void)setTempView:(UIView *)tempView {
     objc_setAssociatedObject(self, &collectionViewTempView,
                              tempView,
-                             OBJC_ASSOCIATION_ASSIGN);
+                             OBJC_ASSOCIATION_RETAIN);
 }
 
 - (UICollectionViewMoveCompleteBlock)actionHandler {
