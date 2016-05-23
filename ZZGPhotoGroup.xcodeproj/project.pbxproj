@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		121C48DE240F28631CE89CEA /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 062A390D035F6DB582B9E8C8 /* libPods.a */; };
 		496019441CF031B100C22FCA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 496019431CF031B100C22FCA /* main.m */; };
 		496019471CF031B100C22FCA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 496019461CF031B100C22FCA /* AppDelegate.m */; };
 		4960194A1CF031B100C22FCA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 496019491CF031B100C22FCA /* ViewController.m */; };
@@ -15,6 +16,13 @@
 		496019521CF031B100C22FCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 496019501CF031B100C22FCA /* LaunchScreen.storyboard */; };
 		4960195D1CF031B100C22FCA /* ZZGPhotoGroupTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4960195C1CF031B100C22FCA /* ZZGPhotoGroupTests.m */; };
 		496019681CF031B100C22FCA /* ZZGPhotoGroupUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 496019671CF031B100C22FCA /* ZZGPhotoGroupUITests.m */; };
+		496019771CF0364A00C22FCA /* ZZGPhotoGroupView.m in Sources */ = {isa = PBXBuildFile; fileRef = 496019761CF0364A00C22FCA /* ZZGPhotoGroupView.m */; };
+		4960197B1CF0368200C22FCA /* ZZGPhotoGroupCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4960197A1CF0368200C22FCA /* ZZGPhotoGroupCell.m */; };
+		4960197E1CF038ED00C22FCA /* ZZGImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4960197D1CF038ED00C22FCA /* ZZGImageView.m */; };
+		496019811CF0391100C22FCA /* ZZGImageSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 496019801CF0391100C22FCA /* ZZGImageSource.m */; };
+		496019841CF046CE00C22FCA /* ZZGPhotoGroupLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 496019831CF046CE00C22FCA /* ZZGPhotoGroupLayout.m */; };
+		4960198B1CF1ADF800C22FCA /* UICollectionView+Move.m in Sources */ = {isa = PBXBuildFile; fileRef = 4960198A1CF1ADF800C22FCA /* UICollectionView+Move.m */; };
+		4960198F1CF2CCEE00C22FCA /* UIButton+ZZGKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 4960198E1CF2CCEE00C22FCA /* UIButton+ZZGKit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +43,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		062A390D035F6DB582B9E8C8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		4960193F1CF031B100C22FCA /* ZZGPhotoGroup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZZGPhotoGroup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		496019431CF031B100C22FCA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		496019451CF031B100C22FCA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +60,22 @@
 		496019631CF031B100C22FCA /* ZZGPhotoGroupUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZZGPhotoGroupUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		496019671CF031B100C22FCA /* ZZGPhotoGroupUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZZGPhotoGroupUITests.m; sourceTree = "<group>"; };
 		496019691CF031B100C22FCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		496019751CF0364A00C22FCA /* ZZGPhotoGroupView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZGPhotoGroupView.h; path = PhotoGroup/ZZGPhotoGroupView.h; sourceTree = "<group>"; };
+		496019761CF0364A00C22FCA /* ZZGPhotoGroupView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZGPhotoGroupView.m; path = PhotoGroup/ZZGPhotoGroupView.m; sourceTree = "<group>"; };
+		496019791CF0368200C22FCA /* ZZGPhotoGroupCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZGPhotoGroupCell.h; path = PhotoGroup/ZZGPhotoGroupCell.h; sourceTree = "<group>"; };
+		4960197A1CF0368200C22FCA /* ZZGPhotoGroupCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZGPhotoGroupCell.m; path = PhotoGroup/ZZGPhotoGroupCell.m; sourceTree = "<group>"; };
+		4960197C1CF038ED00C22FCA /* ZZGImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZGImageView.h; path = PhotoGroup/ZZGImageView.h; sourceTree = "<group>"; };
+		4960197D1CF038ED00C22FCA /* ZZGImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZGImageView.m; path = PhotoGroup/ZZGImageView.m; sourceTree = "<group>"; };
+		4960197F1CF0391100C22FCA /* ZZGImageSource.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZGImageSource.h; path = PhotoGroup/ZZGImageSource.h; sourceTree = "<group>"; };
+		496019801CF0391100C22FCA /* ZZGImageSource.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZGImageSource.m; path = PhotoGroup/ZZGImageSource.m; sourceTree = "<group>"; };
+		496019821CF046CE00C22FCA /* ZZGPhotoGroupLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZZGPhotoGroupLayout.h; path = PhotoGroup/ZZGPhotoGroupLayout.h; sourceTree = "<group>"; };
+		496019831CF046CE00C22FCA /* ZZGPhotoGroupLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZZGPhotoGroupLayout.m; path = PhotoGroup/ZZGPhotoGroupLayout.m; sourceTree = "<group>"; };
+		496019891CF1ADF800C22FCA /* UICollectionView+Move.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+Move.h"; sourceTree = "<group>"; };
+		4960198A1CF1ADF800C22FCA /* UICollectionView+Move.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+Move.m"; sourceTree = "<group>"; };
+		4960198D1CF2CCEE00C22FCA /* UIButton+ZZGKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "UIButton+ZZGKit.h"; path = "PhotoGroup/UIButton+ZZGKit.h"; sourceTree = "<group>"; };
+		4960198E1CF2CCEE00C22FCA /* UIButton+ZZGKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "UIButton+ZZGKit.m"; path = "PhotoGroup/UIButton+ZZGKit.m"; sourceTree = "<group>"; };
+		C5D4C8AAEE6E3C2B28DA2805 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D6A9B2152941B599204A121E /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +83,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				121C48DE240F28631CE89CEA /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +104,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2C330241993EBFE37DBDD8E9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				062A390D035F6DB582B9E8C8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		496019361CF031B100C22FCA = {
 			isa = PBXGroup;
 			children = (
@@ -85,6 +119,8 @@
 				4960195B1CF031B100C22FCA /* ZZGPhotoGroupTests */,
 				496019661CF031B100C22FCA /* ZZGPhotoGroupUITests */,
 				496019401CF031B100C22FCA /* Products */,
+				DE5CFE650B9E572152623B50 /* Pods */,
+				2C330241993EBFE37DBDD8E9 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -105,6 +141,7 @@
 				496019461CF031B100C22FCA /* AppDelegate.m */,
 				496019481CF031B100C22FCA /* ViewController.h */,
 				496019491CF031B100C22FCA /* ViewController.m */,
+				496019781CF0364E00C22FCA /* PhotoGroup */,
 				4960194B1CF031B100C22FCA /* Main.storyboard */,
 				4960194E1CF031B100C22FCA /* Assets.xcassets */,
 				496019501CF031B100C22FCA /* LaunchScreen.storyboard */,
@@ -140,6 +177,44 @@
 			path = ZZGPhotoGroupUITests;
 			sourceTree = "<group>";
 		};
+		496019781CF0364E00C22FCA /* PhotoGroup */ = {
+			isa = PBXGroup;
+			children = (
+				496019751CF0364A00C22FCA /* ZZGPhotoGroupView.h */,
+				496019761CF0364A00C22FCA /* ZZGPhotoGroupView.m */,
+				496019821CF046CE00C22FCA /* ZZGPhotoGroupLayout.h */,
+				496019831CF046CE00C22FCA /* ZZGPhotoGroupLayout.m */,
+				496019791CF0368200C22FCA /* ZZGPhotoGroupCell.h */,
+				4960197A1CF0368200C22FCA /* ZZGPhotoGroupCell.m */,
+				4960197C1CF038ED00C22FCA /* ZZGImageView.h */,
+				4960197D1CF038ED00C22FCA /* ZZGImageView.m */,
+				4960197F1CF0391100C22FCA /* ZZGImageSource.h */,
+				496019801CF0391100C22FCA /* ZZGImageSource.m */,
+				4960198C1CF1ADFC00C22FCA /* Move */,
+			);
+			name = PhotoGroup;
+			sourceTree = "<group>";
+		};
+		4960198C1CF1ADFC00C22FCA /* Move */ = {
+			isa = PBXGroup;
+			children = (
+				496019891CF1ADF800C22FCA /* UICollectionView+Move.h */,
+				4960198A1CF1ADF800C22FCA /* UICollectionView+Move.m */,
+				4960198D1CF2CCEE00C22FCA /* UIButton+ZZGKit.h */,
+				4960198E1CF2CCEE00C22FCA /* UIButton+ZZGKit.m */,
+			);
+			name = Move;
+			sourceTree = "<group>";
+		};
+		DE5CFE650B9E572152623B50 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C5D4C8AAEE6E3C2B28DA2805 /* Pods.debug.xcconfig */,
+				D6A9B2152941B599204A121E /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +222,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4960196C1CF031B100C22FCA /* Build configuration list for PBXNativeTarget "ZZGPhotoGroup" */;
 			buildPhases = (
+				6BFA203A8CF6346C6351C721 /* Check Pods Manifest.lock */,
 				4960193B1CF031B100C22FCA /* Sources */,
 				4960193C1CF031B100C22FCA /* Frameworks */,
 				4960193D1CF031B100C22FCA /* Resources */,
+				3303854C3700EBF13F3AB4C8 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -265,14 +342,54 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		3303854C3700EBF13F3AB4C8 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6BFA203A8CF6346C6351C721 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4960193B1CF031B100C22FCA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				496019841CF046CE00C22FCA /* ZZGPhotoGroupLayout.m in Sources */,
+				4960197E1CF038ED00C22FCA /* ZZGImageView.m in Sources */,
+				4960197B1CF0368200C22FCA /* ZZGPhotoGroupCell.m in Sources */,
+				4960198B1CF1ADF800C22FCA /* UICollectionView+Move.m in Sources */,
+				4960198F1CF2CCEE00C22FCA /* UIButton+ZZGKit.m in Sources */,
+				496019811CF0391100C22FCA /* ZZGImageSource.m in Sources */,
 				4960194A1CF031B100C22FCA /* ViewController.m in Sources */,
 				496019471CF031B100C22FCA /* AppDelegate.m in Sources */,
 				496019441CF031B100C22FCA /* main.m in Sources */,
+				496019771CF0364A00C22FCA /* ZZGPhotoGroupView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -411,6 +528,7 @@
 		};
 		4960196D1CF031B100C22FCA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C5D4C8AAEE6E3C2B28DA2805 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZZGPhotoGroup/Info.plist;
@@ -422,6 +540,7 @@
 		};
 		4960196E1CF031B100C22FCA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A9B2152941B599204A121E /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = ZZGPhotoGroup/Info.plist;
@@ -496,6 +615,7 @@
 				4960196E1CF031B100C22FCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4960196F1CF031B100C22FCA /* Build configuration list for PBXNativeTarget "ZZGPhotoGroupTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +624,7 @@
 				496019711CF031B100C22FCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		496019721CF031B100C22FCA /* Build configuration list for PBXNativeTarget "ZZGPhotoGroupUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +633,7 @@
 				496019741CF031B100C22FCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

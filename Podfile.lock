@@ -1,0 +1,57 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - CTAssetsPickerController (2.9.5)
+  - DACircularProgress (2.3.1)
+  - HappyDNS (0.2.3)
+  - Masonry (0.6.4)
+  - MBProgressHUD (0.9.2)
+  - MWPhotoBrowser (2.1.1):
+    - DACircularProgress (~> 2.3)
+    - MBProgressHUD (~> 0.9)
+    - SDWebImage (!= 3.7.2, ~> 3.7)
+  - Qiniu (7.0.16):
+    - AFNetworking (~> 2.0)
+    - HappyDNS (~> 0.2)
+  - SDWebImage (3.7.1):
+    - SDWebImage/Core (= 3.7.1)
+  - SDWebImage/Core (3.7.1)
+
+DEPENDENCIES:
+  - CTAssetsPickerController (~> 2.9.5)
+  - Masonry
+  - MWPhotoBrowser
+  - Qiniu (~> 7.0)
+  - SDWebImage (= 3.7.1)
+
+SPEC CHECKSUMS:
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  CTAssetsPickerController: b413fece2194ae3dbf22fbc544cf6f2a6d516a4d
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  HappyDNS: 6d85942e64c28b4fa61f8c76580398f52d6d1d11
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MWPhotoBrowser: ba0d0c09ffda3a7ea10093518738c502c1c7141c
+  Qiniu: 51a8702cddc02b50867e10cef99291b9a8a006b1
+  SDWebImage: ed3095af2ff88b436426037444979b917f6c5575
+
+COCOAPODS: 0.38.2
